@@ -1,0 +1,5 @@
+it\softwaredoctor\angularproject\repository\ProductRepository.class
+it\softwaredoctor\angularproject\AngularprojectApplication.class
+it\softwaredoctor\angularproject\model\Product.class
+it\softwaredoctor\angularproject\controller\ProductController.class
+it\softwaredoctor\angularproject\service\ProductService.class

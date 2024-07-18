@@ -1,0 +1,22 @@
+services:
+  postgres:
+    image: 'postgres:latest'
+    environment:
+      - 'POSTGRES_DB=angularproject'
+      - 'POSTGRES_PASSWORD=root13'
+      - 'POSTGRES_USER=andrea'
+      - 'PGDATA=/var/lib/postgresql/data/pgdata'
+    volumes:
+      - db:/var/lib/postgresql/data
+    ports:
+      - "5433:5432"
+    networks:
+      - db-network
+    restart: unless-stopped
+
+networks:
+  db-network:
+    driver: bridge
+
+volumes:
+  db:

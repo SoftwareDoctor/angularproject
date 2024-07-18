@@ -1,0 +1,23 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5433/angularproject
+    username: andrea
+    password: root13
+    driver-class-name: org.postgresql.Driver
+  profiles:
+    active: main
+  application:
+    name: angularprojectBE
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate.format_sql: true
+      hibernate.dialect: org.hibernate.dialect.PostgreSQLDialect
+      hibernate.globally_quoted_identifiers: true # Questa proprietà dice a Hibernate di racchiudere tutti gli identificatori (come nomi di tabelle e colonne) tra virgolette doppie. Questo è particolarmente utile quando si utilizzano parole riservate come nomi di tabelle o colonne in PostgreSQL.
+  docker:
+    compose:
+      file: ./AngularProjectBE/docker-compose.yaml
+server:
+  port: 8080

@@ -1,0 +1,82 @@
+body, html {
+      height: 100%;
+      width: 100%;
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif; /* Esempio di famiglia di font */
+    }
+
+    /* Stile per il wrapper principale */
+    .wrapper {
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh; /* Altezza minima del wrapper pari all'altezza del viewport */
+    }
+
+    /* Stile per il contenuto principale */
+    .content {
+      flex: 1; /* Espande il contenuto per riempire lo spazio disponibile */
+      padding: 20px; /* Padding opzionale */
+      overflow: auto; /* Aggiungi uno scroll interno se il contenuto supera l'altezza disponibile */
+    }
+
+    /* Stile per il footer */
+    .footer {
+      background-color: #4d69a2; /* Colore di sfondo del footer */
+      padding: 20px 0; /* Spaziatura interna del footer */
+      text-align: center; /* Allinea il testo al centro */
+      width: 100%;
+    }
+
+    /* Stile per il navbar */
+    .navbar {
+      background-color: #4d69a2; /* Colore di sfondo della navbar */
+      padding: 10px;
+      margin-bottom: 20px; /* Aggiunge spazio sotto la navbar */
+    }
+
+    .navbar a {
+      color: #ffffff !important;
+      font-size: 18px;
+      font-weight: bold;
+      text-decoration: none;
+      padding: 10px;
+      border-radius: 5px;
+    }
+
+    .navbar a:hover {
+      background-color: #d39d38; /* Cambia il colore di sfondo al passaggio del mouse */
+    }
+
+    /* Stile per il contenitore principale */
+    .container {
+      background: linear-gradient(to bottom right, #ffffff, #f1f8e9); /* Bianco sfumato */
+      padding: 20px;
+    }
+
+    /* Stile per il link attivo */
+    .active-link {
+      color: blue;
+      font-weight: bold;
+    }
+
+    /* Stile per il router-outlet */
+    router-outlet {
+      flex: 1; /* Fai espandere router-outlet per riempire lo spazio disponibile */
+      overflow: auto; /* Aggiungi uno scroll interno se necessario */
+    }
+
+        .containerFooter {
+          background-color: #4d69a2; /* Colore di sfondo del containerFooter */
+        }
+ .text-muted{
+       color: #ffffff !important;
+      font-weight: bold;
+    }
+
+
+
+
+
+
+
