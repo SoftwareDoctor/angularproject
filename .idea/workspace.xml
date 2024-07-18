@@ -138,6 +138,7 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$" />
       <path value="$PROJECT_DIR$/angularprojectBE" />
+      <path value="$PROJECT_DIR$/angularproject" />
     </ignored-roots>
     <MESSAGE value="commit angular" />
     <MESSAGE value="commit angular new" />
