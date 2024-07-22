@@ -19,7 +19,7 @@
     <option name="activeAccountId" value="VXNlcjo0MzI3ODI=" />
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/angularFE" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GitHubPullRequestSearchHistory">{
   &quot;lastFilter&quot;: {
@@ -29,7 +29,7 @@
 }</component>
   <component name="GithubPullRequestsUISettings">{
   &quot;selectedUrlAndAccountId&quot;: {
-    &quot;url&quot;: &quot;https://github.com/SoftwareDoctor/angular_java_project.git&quot;,
+    &quot;url&quot;: &quot;https://github.com/SoftwareDoctor/angularproject.git&quot;,
     &quot;accountId&quot;: &quot;4567b492-d0a1-49f7-aec5-ae67b55ce95b&quot;
   }
 }</component>
@@ -55,7 +55,7 @@
     "RunOnceActivity.CodyHistoryLlmMigration": "true",
     "RunOnceActivity.CodyProjectSettingsMigration": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "com.google.cloudcode.ide_session_index": "20240718_0002",
+    "com.google.cloudcode.ide_session_index": "20240722_0000",
     "git-widget-placeholder": "master",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "C:/Users/andrea.italiano/Desktop/Angular_Project/angularprojectBE",

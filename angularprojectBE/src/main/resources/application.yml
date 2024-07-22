@@ -18,6 +18,6 @@ spring:
       hibernate.globally_quoted_identifiers: true # Questa proprietà dice a Hibernate di racchiudere tutti gli identificatori (come nomi di tabelle e colonne) tra virgolette doppie. Questo è particolarmente utile quando si utilizzano parole riservate come nomi di tabelle o colonne in PostgreSQL.
   docker:
     compose:
-      file: ./AngularProjectBE/docker-compose.yaml
+      file: ./angularprojectBE/docker-compose.yaml
 server:
   port: 8080
