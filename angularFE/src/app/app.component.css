@@ -28,6 +28,19 @@ body, html {
       width: 100%;
     }
 
+    .navbar-brand {
+      display: flex;
+      align-items: center;
+    }
+
+    .navbar-brand i {
+      margin-right: 8px; /* Spazio tra l'icona e il testo */
+    }
+
+    .navbar-nav .nav-link {
+      color: #000; /* Colore del testo dei link */
+    }
+
     /* Stile per il navbar */
     .navbar {
       background-color: #4d69a2; /* Colore di sfondo della navbar */

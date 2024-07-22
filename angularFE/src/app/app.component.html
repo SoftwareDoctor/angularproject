@@ -5,14 +5,17 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-  <title>Software Doctor</title>
+  <title>{{ title }}</title>
 </head>
 <body class="d-flex flex-column wrapper">
 <nav class="navbar navbar-expand-lg navbar-light">
+  <a class="navbar-brand" [routerLink]="['/']" routerLinkActive="active-link">
+    <i class="fas fa-cogs"></i>
+    {{ subtitle }}
+  </a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
-
   <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
     <ul class="navbar-nav">
       <li class="nav-item">
