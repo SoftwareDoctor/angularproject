@@ -44,3 +44,18 @@ export class ProductComponent implements OnInit {
     }
   }
 }
+
+
+
+// loadProducts(): Observable<Product[]> {
+//   return this.productService.getProducts().pipe(
+//     tap(data => {
+//       this.products = data;
+//     }),
+//     catchError(error => {
+//       console.error('Error fetching products:', error);
+//       return of([]); // Restituisce un array vuoto in caso di errore
+//     })
+//   );
+// }
+

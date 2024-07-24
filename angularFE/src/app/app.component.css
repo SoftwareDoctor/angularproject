@@ -33,13 +33,21 @@ body, html {
       align-items: center;
     }
 
-    .navbar-brand i {
-      margin-right: 8px; /* Spazio tra l'icona e il testo */
-    }
+.custom-link {
+  background-color: transparent; /* Rende lo sfondo del link trasparente */
+  border: none; /* Rimuove il bordo se presente */
+  color: white; /* Imposta il colore del testo su bianco */
+  font-weight: bold; /* Imposta il testo in grassetto */
+  font-size: 1rem; /* Imposta la dimensione del font (puoi personalizzarla) */
+  text-decoration: none; /* Rimuove la sottolineatura */
+  cursor: pointer; /* Mostra il cursore a mano al passaggio sopra il link */
+  padding: 0.5rem 1rem; /* Spaziatura interna (puoi personalizzarla) */
+}
 
-    .navbar-nav .nav-link {
-      color: #000; /* Colore del testo dei link */
-    }
+/* Se vuoi personalizzare l'icona all'interno del link */
+.custom-link i {
+  margin-right: 0.5rem; /* Spazio tra l'icona e il testo */
+}
 
     /* Stile per il navbar */
     .navbar {

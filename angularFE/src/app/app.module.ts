@@ -5,7 +5,7 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { ProductComponent } from './product/product.component';
 import { HttpClientModule } from '@angular/common/http';
-import { FormsModule } from '@angular/forms';  // Importa FormsModule
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -17,7 +17,7 @@ import { FormsModule } from '@angular/forms';  // Importa FormsModule
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    FormsModule  // Aggiungi FormsModule
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
