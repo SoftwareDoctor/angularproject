@@ -1,7 +1,5 @@
 package it.softwaredoctor.angularproject;
 
-import it.softwaredoctor.angularproject.model.Product;
-import it.softwaredoctor.angularproject.repository.ProductRepository;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

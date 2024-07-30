@@ -3,7 +3,6 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './components/home/home.component';
-import { ProductComponent } from './components/product/product.component';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
 import { ResumeComponent } from './components/resume/resume.component';
@@ -15,7 +14,6 @@ import { BlogsingleLayoutComponent } from './components/blogsingle-layout/blogsi
   declarations: [
     AppComponent,
     HomeComponent,
-    ProductComponent,
     ResumeComponent,
     BlogComponent,
     AppLayoutComponent,
