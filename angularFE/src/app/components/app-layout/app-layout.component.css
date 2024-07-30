@@ -1,0 +1,17 @@
+.layout-container {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+}
+
+.containerImage {
+  text-align: center;
+}
+
+.containerImage img {
+  max-width: 100%;
+  height: auto;
+}
+
+
+

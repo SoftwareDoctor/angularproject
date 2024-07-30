@@ -1,0 +1,34 @@
+<div class="layout-container">
+  <div class="containerArticle">
+    <div *ngIf="!article" class="no-article-message">
+      <p>Articolo non presente</p>
+    </div>
+    <!-- Mostra l'articolo se presente -->
+    <header *ngIf="article">
+      <h2>{{ article.titleArticle }}</h2>
+      <span class="text-muted meta-details">
+        Author: <a class="text-active">Andrea Italiano</a>
+      </span>
+      <p>{{ article.textArticle }}</p>
+    </header>
+    <div class="content" *ngIf="article">
+      <a href="https://postimages.org/" target="_blank">
+        <img src="https://i.postimg.cc/wT6Bf0V6/download.jpg" border="0" alt="download"/>
+      </a>
+    </div>
+  </div>
+  <div class="footer">
+  <footer>
+    <div class="container-footer">
+    <span class="text-muted">Tags:
+      <span *ngIf="article">
+        <a class="tag">{{ article.tag }}</a>
+      </span>
+    </span>
+    </div>
+  </footer>
+    <div class="indietro">
+  <button (click)="goBack()" class="btn btn-primary">Indietro</button>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,33 @@
+<div class="container">
+  <!-- Messaggio quando non ci sono articoli e non è stata effettuata una ricerca -->
+  <div *ngIf="articles.length === 0 && !searchName.trim()" class="no-articles-message">
+    <p>{{ noArticlesMessage }}</p>
+  </div>
+
+  <!-- Sezione di ricerca -->
+  <div class="form-group">
+    <input type="text" class="form-control" placeholder="Cerca per tag" [(ngModel)]="searchName">
+    <button class="btn btn-primary mt-2" (click)="searchByTag()">Cerca</button>
+    <!-- Mostra il messaggio di errore o il messaggio per nessun articolo trovato -->
+    <div *ngIf="errorMessage">
+      {{ errorMessage }}
+    </div>
+  </div>
+
+  <div class="article">
+  <!-- Sezione per mostrare gli articoli -->
+  <div *ngIf="articles.length > 0" class="blog-row">
+    <div class="blog" *ngFor="let article of articles">
+      <div class="blog-image">
+        <!-- Aggiungi un'immagine se necessario -->
+      </div>
+      <div class="blog-content">
+        <h2>{{ article.titleArticle }}</h2>
+        <p>{{ article.textArticle }}</p>
+        <a class="nav-link" [routerLink]="['/blog', article.titleArticle]">Leggi</a>
+        <router-outlet></router-outlet>
+      </div>
+    </div>
+  </div>
+</div>
+</div>

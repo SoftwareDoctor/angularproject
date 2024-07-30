@@ -66,7 +66,7 @@
     "RunOnceActivity.CodyHistoryLlmMigration": "true",
     "RunOnceActivity.CodyProjectSettingsMigration": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "com.google.cloudcode.ide_session_index": "20240730_0001",
+    "com.google.cloudcode.ide_session_index": "20240730_0002",
     "git-widget-placeholder": "master",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "C:/Users/andrea.italiano/Desktop/Angular_Project/angularprojectBE",
@@ -209,7 +209,15 @@
       <option name="project" value="LOCAL" />
       <updated>1722321124330</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="commit angular FE">
+      <option name="closed" value="true" />
+      <created>1722324601794</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1722324601794</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="UnknownFeatures">
@@ -231,6 +239,7 @@
     <MESSAGE value="commit angular new7" />
     <MESSAGE value="commit angular new8" />
     <MESSAGE value="commit angular new9 video" />
-    <option name="LAST_COMMIT_MESSAGE" value="commit angular new9 video" />
+    <MESSAGE value="commit angular FE" />
+    <option name="LAST_COMMIT_MESSAGE" value="commit angular FE" />
   </component>
 </project>

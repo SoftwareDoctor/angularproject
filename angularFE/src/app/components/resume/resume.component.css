@@ -1,0 +1,43 @@
+/* resume.component.css */
+.mind-map {
+  position: relative;
+  text-align: center;
+  margin: auto;
+  width: 100%;
+  height: 100px;
+}
+
+.node {
+  position: relative;
+  width: 100px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #4D69A2;
+  border: 2px solid #ccc;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+}
+
+
+.skills-node {
+position: relative;
+  top: 0%;
+  left: 50%;
+  transform: translate(-70%, -480%);
+  background-color: #4D69A2;
+  color: #fff;
+}
+
+.custom-button {
+  background-color: #4D69A2;
+  border: none;
+  color: white;
+  font-weight: bold;
+}
+
+.custom-button:hover {
+  background-color: #3a4a7d;
+}
