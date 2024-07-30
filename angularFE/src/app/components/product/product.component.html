@@ -1,0 +1,24 @@
+<!-- product.component.html -->
+<div class="container">
+  <h2>Elenco Prodotti</h2>
+
+  <div class="form-group">
+    <input type="text" class="form-control" placeholder="Cerca prodotto per nome" [(ngModel)]="searchName">
+    <button class="btn btn-primary mt-2" (click)="searchProducts()">Cerca</button>
+  </div>
+
+  <table class="table table-striped table-light">
+    <thead>
+    <tr>
+      <th>Nome Prodotto</th>
+      <th>Prezzo</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let product of products">
+      <td>{{ product.name }}</td>
+      <td>{{ product.price }}</td>
+    </tr>
+    </tbody>
+  </table>
+</div>
