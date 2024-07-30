@@ -2,7 +2,7 @@
  * @Author: SoftwareDoctor andrea_italiano87@yahoo.com
  * @Date: 2024-07-25 08:43:48
  * @LastEditors: SoftwareDoctor andrea_italiano87@yahoo.com
- * @LastEditTime: 2024-07-25 15:10:41
+ * @LastEditTime: 2024-07-30 10:55:25
  * @FilePath: angularprojectBE/src/main/java/it/softwaredoctor/angularproject/service/ResumeService.java
  * @Description: 这是默认设置, 可以在设置》工具》File Description中进行配置
  */
@@ -24,25 +24,15 @@ public class ResumeService {
     
     private final ResumeRepository resumeRepository;
     
-//    public byte[] getCV(String title) {
-//        return resumeRepository.getCV(title);
-//    }
 
     public byte[] getCV(String title) throws SQLException {
         Resume resume = resumeRepository.findByTitle(title);
         if (resume != null) {
-//            Blob blob = resume.getCv()[0]; // Assume che ci sia solo un file
-//            return blob.getBytes(1, (int) blob.length()); 
             return resume.getCv();
         }
         throw new RuntimeException("File not found");
     }
     
-//    public void createResume(Resume resume, MultipartFile cvFile) throws IOException {
-//        byte[] cv = convertFileToByteArray(cvFile);
-//        resume.setCv(cv);
-//        resumeRepository.save(resume);
-//    }
 
     public void createResume(Resume resume) {
         resumeRepository.save(resume);

@@ -1,17 +1,9 @@
 C:\Users\andrea.italiano\Desktop\Angular_Project\angularprojectBE\src\main\java\it\softwaredoctor\angularproject\AngularprojectApplication.java
 C:\Users\andrea.italiano\Desktop\Angular_Project\angularprojectBE\src\main\java\it\softwaredoctor\angularproject\controller\BlogController.java
-C:\Users\andrea.italiano\Desktop\Angular_Project\angularprojectBE\src\main\java\it\softwaredoctor\angularproject\controller\ProductController.java
-C:\Users\andrea.italiano\Desktop\Angular_Project\angularprojectBE\src\main\java\it\softwaredoctor\angularproject\controller\ProjectController.java
 C:\Users\andrea.italiano\Desktop\Angular_Project\angularprojectBE\src\main\java\it\softwaredoctor\angularproject\controller\ResumeController.java
 C:\Users\andrea.italiano\Desktop\Angular_Project\angularprojectBE\src\main\java\it\softwaredoctor\angularproject\model\Blog.java
-C:\Users\andrea.italiano\Desktop\Angular_Project\angularprojectBE\src\main\java\it\softwaredoctor\angularproject\model\Product.java
-C:\Users\andrea.italiano\Desktop\Angular_Project\angularprojectBE\src\main\java\it\softwaredoctor\angularproject\model\Project.java
 C:\Users\andrea.italiano\Desktop\Angular_Project\angularprojectBE\src\main\java\it\softwaredoctor\angularproject\model\Resume.java
 C:\Users\andrea.italiano\Desktop\Angular_Project\angularprojectBE\src\main\java\it\softwaredoctor\angularproject\repository\BlogRepository.java
-C:\Users\andrea.italiano\Desktop\Angular_Project\angularprojectBE\src\main\java\it\softwaredoctor\angularproject\repository\ProductRepository.java
-C:\Users\andrea.italiano\Desktop\Angular_Project\angularprojectBE\src\main\java\it\softwaredoctor\angularproject\repository\ProjectRepository.java
 C:\Users\andrea.italiano\Desktop\Angular_Project\angularprojectBE\src\main\java\it\softwaredoctor\angularproject\repository\ResumeRepository.java
 C:\Users\andrea.italiano\Desktop\Angular_Project\angularprojectBE\src\main\java\it\softwaredoctor\angularproject\service\BlogService.java
-C:\Users\andrea.italiano\Desktop\Angular_Project\angularprojectBE\src\main\java\it\softwaredoctor\angularproject\service\ProductService.java
-C:\Users\andrea.italiano\Desktop\Angular_Project\angularprojectBE\src\main\java\it\softwaredoctor\angularproject\service\ProjectService.java
 C:\Users\andrea.italiano\Desktop\Angular_Project\angularprojectBE\src\main\java\it\softwaredoctor\angularproject\service\ResumeService.java
