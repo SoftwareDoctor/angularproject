@@ -201,7 +201,15 @@
       <option name="project" value="LOCAL" />
       <updated>1722320244246</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="commit angular new9 video">
+      <option name="closed" value="true" />
+      <created>1722321124330</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1722321124330</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="UnknownFeatures">
@@ -222,6 +230,7 @@
     <MESSAGE value="commit angular new6" />
     <MESSAGE value="commit angular new7" />
     <MESSAGE value="commit angular new8" />
-    <option name="LAST_COMMIT_MESSAGE" value="commit angular new8" />
+    <MESSAGE value="commit angular new9 video" />
+    <option name="LAST_COMMIT_MESSAGE" value="commit angular new9 video" />
   </component>
 </project>

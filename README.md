@@ -12,10 +12,9 @@ Questo è il mio sito personale, dove puoi trovare tutte le informazioni relativ
 - Leggere articoli che ho scritto.
 - Trovare i link ai miei profili LinkedIn e GitHub.
 
-<video width="640" height="480" controls>
-  <source src="Software Doctor.mp4" type="video/mp4">
-</video>
+### Guarda il Video
 
+[![Guarda il Video](https://img.youtube.com/vi/D2hT5fltACc/maxresdefault.jpg)](https://www.youtube.com/watch?v=D2hT5fltACc)
 
 ## Tecnologie Utilizzate
 
@@ -83,6 +82,6 @@ Prima di avviare PostgreSQL con Docker, assicurati di avere i seguenti requisiti
 
 ## Autore
 
-Questo progetto è stato creato e mantenuto da:
+Questo progetto è stato creato da:
 
 **Andrea Italiano**
