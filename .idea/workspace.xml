@@ -18,6 +18,14 @@
   <component name="CodyActiveAccount">
     <option name="activeAccountId" value="VXNlcjo0MzI3ODI=" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
@@ -35,6 +43,9 @@
 }</component>
   <component name="JpbToolWindowState">
     <option name="isToolWindowVisible" value="false" />
+  </component>
+  <component name="MavenRunner">
+    <option name="skipTests" value="true" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 4
@@ -55,14 +66,14 @@
     "RunOnceActivity.CodyHistoryLlmMigration": "true",
     "RunOnceActivity.CodyProjectSettingsMigration": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "com.google.cloudcode.ide_session_index": "20240722_0000",
+    "com.google.cloudcode.ide_session_index": "20240730_0000",
     "git-widget-placeholder": "master",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "C:/Users/andrea.italiano/Desktop/Angular_Project/angularprojectBE",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.0",
-    "settings.editor.selected.configurable": "project.propVCSSupport.DirectoryMappings"
+    "settings.editor.selected.configurable": "preferences.pluginManager"
   },
   "keyToStringList": {
     "GitStage.ChangesTree.GroupingKeys": [
@@ -72,6 +83,12 @@
     ]
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\andrea.italiano\Desktop\Angular_Project\angularFE\src\app\components" />
+      <recent name="C:\Users\andrea.italiano\Desktop\Angular_Project\angularFE\src\app\models" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration name="AngularprojectApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="it.softwaredoctor.angularproject.AngularprojectApplication" />
@@ -152,7 +169,39 @@
       <option name="project" value="LOCAL" />
       <updated>1721801419515</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="commit angular new5">
+      <option name="closed" value="true" />
+      <created>1721801452250</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1721801452250</updated>
+    </task>
+    <task id="LOCAL-00008" summary="commit angular new6">
+      <option name="closed" value="true" />
+      <created>1721801579277</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1721801579277</updated>
+    </task>
+    <task id="LOCAL-00009" summary="commit angular new7">
+      <option name="closed" value="true" />
+      <created>1721801618528</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1721801618528</updated>
+    </task>
+    <task id="LOCAL-00010" summary="commit angular new8">
+      <option name="closed" value="true" />
+      <created>1722320244246</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1722320244246</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="UnknownFeatures">
@@ -169,6 +218,10 @@
     <MESSAGE value="commit angular new2" />
     <MESSAGE value="commit angular new3" />
     <MESSAGE value="commit angular new4" />
-    <option name="LAST_COMMIT_MESSAGE" value="commit angular new4" />
+    <MESSAGE value="commit angular new5" />
+    <MESSAGE value="commit angular new6" />
+    <MESSAGE value="commit angular new7" />
+    <MESSAGE value="commit angular new8" />
+    <option name="LAST_COMMIT_MESSAGE" value="commit angular new8" />
   </component>
 </project>

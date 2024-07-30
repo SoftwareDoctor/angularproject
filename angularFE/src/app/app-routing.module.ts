@@ -1,18 +1,38 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { HomeComponent } from './home/home.component';  // Importa HomeComponent
-import { ProductComponent } from './product/product.component';
+import { HomeComponent } from './components/home/home.component';
+import { ProductComponent } from './components/product/product.component';
+import { ResumeComponent } from './components/resume/resume.component';
+import { BlogComponent } from './components/blog/blog.component';
+import { BlogsingleLayoutComponent } from './components/blogsingle-layout/blogsingle-layout.component';  // Assicurati di usare il nome corretto
+import { AppLayoutComponent } from './components/app-layout/app-layout.component';
 
 const routes: Routes = [
-  { path: 'home', component: HomeComponent },  // Rotta per la home page
-  { path: '', redirectTo: '/home', pathMatch: 'full' },  // Redirect alla home per il percorso di base
+  { path: 'home', component: HomeComponent },
   { path: 'products', component: ProductComponent },
-  { path: '**', redirectTo: '/home' }  // Redirect alla home per qualsiasi rotta non trovata
+ {
+     path: '',
+     component: AppLayoutComponent,
+     children: [
+       { path: 'resume', component: ResumeComponent },
+       { path: 'home', component: HomeComponent }
+     ]
+   },
+  { path: 'blog', component: BlogComponent },
+  { path: 'blog/:title', component: BlogsingleLayoutComponent },
+  { path: '', redirectTo: '/home', pathMatch: 'full' },
+  { path: '**', redirectTo: '/home' }
 ];
-
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule]
 })
 export class AppRoutingModule { }
+
+
+
+
+
+
+

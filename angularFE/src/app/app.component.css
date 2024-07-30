@@ -1,99 +1,151 @@
+$white: #ffffff;
+$primary: #02A695;
+$light-primary: #D6FDF5;
+$weight: 700;
+$mobile-pad: 0 15px;
+
 body, html {
-      height: 100%;
-      width: 100%;
-      margin: 0;
-      padding: 0;
-      font-family: Arial, sans-serif; /* Esempio di famiglia di font */
-    }
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
 
-    /* Stile per il wrapper principale */
-    .wrapper {
-      display: flex;
-      flex-direction: column;
-      min-height: 100vh; /* Altezza minima del wrapper pari all'altezza del viewport */
-    }
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
 
-    /* Stile per il contenuto principale */
-    .content {
-      flex: 1; /* Espande il contenuto per riempire lo spazio disponibile */
-      padding: 20px; /* Padding opzionale */
-      overflow: auto; /* Aggiungi uno scroll interno se il contenuto supera l'altezza disponibile */
-    }
+.content {
+  flex: 1;
+  padding: 20px;
+  overflow: auto;
+}
 
-    /* Stile per il footer */
-    .footer {
-      background-color: #4d69a2; /* Colore di sfondo del footer */
-      padding: 20px 0; /* Spaziatura interna del footer */
-      text-align: center; /* Allinea il testo al centro */
-      width: 100%;
-    }
+.navbar {
+  padding: 10px;
+  background-color: #f8f9fa;
+}
 
-    .navbar-brand {
-      display: flex;
-      align-items: center;
-    }
+.navbar-brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
 
 .custom-link {
-  background-color: transparent; /* Rende lo sfondo del link trasparente */
-  border: none; /* Rimuove il bordo se presente */
-  color: white; /* Imposta il colore del testo su bianco */
-  font-weight: bold; /* Imposta il testo in grassetto */
-  font-size: 1rem; /* Imposta la dimensione del font (puoi personalizzarla) */
-  text-decoration: none; /* Rimuove la sottolineatura */
-  cursor: pointer; /* Mostra il cursore a mano al passaggio sopra il link */
-  padding: 0.5rem 1rem; /* Spaziatura interna (puoi personalizzarla) */
+  cursor: pointer;
+  color: $white;
+  font-weight: $weight;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
 }
 
-/* Se vuoi personalizzare l'icona all'interno del link */
-.custom-link i {
-  margin-right: 0.5rem; /* Spazio tra l'icona e il testo */
+.navbar-brand img {
+  height: 40px;
+  margin-left: 15px;
 }
 
-    /* Stile per il navbar */
-    .navbar {
-      background-color: #4d69a2; /* Colore di sfondo della navbar */
-      padding: 10px;
-      margin-bottom: 20px; /* Aggiunge spazio sotto la navbar */
-    }
+.navbar-toggler {
+  border: none !important;
+  background: transparent;
 
-    .navbar a {
-      color: #ffffff !important;
-      font-size: 18px;
-      font-weight: bold;
-      text-decoration: none;
-      padding: 10px;
-      border-radius: 5px;
-    }
+  .navbar-toggler-icon {
+    background-image: url('data:image/svg+xml,...');
+  }
+}
 
-    .navbar a:hover {
-      background-color: #d39d38; /* Cambia il colore di sfondo al passaggio del mouse */
-    }
+.navbar-nav {
+  margin-left: auto;
+}
 
-    /* Stile per il contenitore principale */
-    .container {
-      background: linear-gradient(to bottom right, #ffffff, #f1f8e9); /* Bianco sfumato */
-      padding: 20px;
-    }
+.navbar-nav .nav-link {
+  color: #4D69A2;
+  font-weight: bold;
+  font-size: 15px;
+  transition: 0.2s background ease;
 
-    /* Stile per il link attivo */
-    .active-link {
-      color: blue;
-      font-weight: bold;
-    }
+  &:hover {
+    color: $primary;
+  }
+}
 
-    /* Stile per il router-outlet */
-    router-outlet {
-      flex: 1; /* Fai espandere router-outlet per riempire lo spazio disponibile */
-      overflow: auto; /* Aggiungi uno scroll interno se necessario */
-    }
+.navbar-nav .nav-link.active-link {
+  font-weight: bold;
+}
 
-        .containerFooter {
-          background-color: #4d69a2; /* Colore di sfondo del containerFooter */
-        }
- .text-muted{
-       color: #ffffff !important;
-      font-weight: bold;
-    }
+.mobile-menu {
+  display: none;
+}
+
+.menu-social {
+  display: flex;
+  align-items: center;
+}
+
+.menu-social .menu-instagram,
+.menu-social .menu-linkedin {
+  margin: 0 8px;
+}
+
+.menu-social img {
+  transition: 200ms;
+  filter: grayscale(0.90);
+  opacity: 0.5;
+
+  &:hover {
+    transform: scale(1.05);
+    filter: grayscale(0);
+    opacity: 1;
+  }
+}
+
+.container {
+  background: linear-gradient(to bottom right, $white, #f1f8e9);
+  padding: 20px;
+}
+
+.active-link {
+  color: blue;
+  font-weight: bold;
+}
+
+footer {
+  background-color: #4d69a2;
+  padding: 20px 0;
+  text-align: center;
+  width: 100%;
+}
+footer .text-muted {
+  color: #ffffff !important;
+  font-weight: bold;
+}
+
+
+@media screen and (max-width: 768px) {
+  .mobile-menu {
+    display: block;
+  }
+
+  .navbar-nav {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 769px) {
+  .mobile-menu {
+    display: none;
+  }
+}
+
+.navbar-light .navbar-brand {
+color: #4D69A2;
+ font-weight: bold;
+}
+
+
 
 
 

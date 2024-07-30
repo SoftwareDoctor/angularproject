@@ -1,4 +1,3 @@
-<!-- app.component.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,43 +7,60 @@
   <title>{{ title }}</title>
 </head>
 <body class="d-flex flex-column wrapper">
-<nav class="navbar navbar-expand-lg navbar-light">
-<!--  <a class="navbar-brand" [routerLink]="['/']" routerLinkActive="active-link">-->
-<!--    <i class="fas fa-cogs">{{ subtitle }}</i>-->
-  <!-- Se questo è il template di app.component.html -->
-  <div class="navbar-brand navbar-brand-custom">
-    <a (click)="navigateToHome()" class="custom-link">
+<header>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand custom-link" (click)="navigateToHome()">
       <i class="fas fa-cogs"></i> {{ subtitle }}
+      <img src='https://i.postimg.cc/v4DfP95F/Andrea-Italiano.png' border='0' alt='Andrea-Italiano' style="height: 40px; margin-left: 15px;"/>
     </a>
-  </div>
-
-
-
-
-<!--  </a>-->
-<!--  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">-->
-<!--    <span class="navbar-toggler-icon"></span>-->
-<!--  </button>-->
-  <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
-    <ul class="navbar-nav">
-      <li class="nav-item">
-        <a class="nav-link" routerLink="/" routerLinkActive="active-link">Home</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" routerLink="/products" routerLinkActive="active-link">Products</a>
-      </li>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/home" routerLinkActive="active-link">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/resume" routerLinkActive="active-link">Resume</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/blog" routerLinkActive="active-link">Blog</a>
+        </li>
+      </ul>
+      <div class="ml-3">
+        <div class="menu-social">
+          <div class="menu-instagram">
+            <a href="https://github.com/SoftwareDoctor" target="_blank" rel="noopener noreferrer">
+              <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" width="40" alt="GitHub">
+            </a>
+          </div>
+          <div class="menu-linkedin">
+            <a href="https://www.linkedin.com/in/andrea-italiano/" target="_blank" rel="noopener noreferrer">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/LinkedIn_logo_initials.png/768px-LinkedIn_logo_initials.png" width="40" alt="LinkedIn">
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <nav class="mobile-menu">
+    <ul class="nav-list">
+      <li><a class="nav-link" routerLink="/home" routerLinkActive="active-link">Home</a></li>
+      <li><a class="nav-link" routerLink="/resume" routerLinkActive="active-link">Resume</a></li>
+      <li><a class="nav-link" routerLink="/blog" routerLinkActive="active-link">Blog</a></li>
     </ul>
-  </div>
-</nav>
-
-<router-outlet></router-outlet>
-
+  </nav>
+  <router-outlet></router-outlet>
+</header>
 <footer class="footer py-3 blue mt-auto">
   <div class="containerFooter">
     <span class="text-muted">Made By SoftwareDoctor</span>
   </div>
 </footer>
-
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
 </body>
 </html>
