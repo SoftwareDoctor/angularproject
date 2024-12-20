@@ -59,6 +59,8 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "Application.AngularprojectApplication.executor": "Run",
+    "Docker.docker-compose.yaml.webapp-be: Compose Deployment.executor": "Run",
+    "Docker.docker-compose.yaml: Compose Deployment.executor": "Run",
     "Maven.angularprojectBE [clean].executor": "Run",
     "Maven.angularprojectBE [install].executor": "Run",
     "RunOnceActivity.CodyAccountHistoryMigration": "true",
@@ -69,10 +71,10 @@
     "com.google.cloudcode.ide_session_index": "20240730_0002",
     "git-widget-placeholder": "master",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/andrea.italiano/Desktop/Angular_Project/angularprojectBE",
-    "project.structure.last.edited": "Modules",
+    "last_opened_file_path": "C:/Users/andrea.italiano/Desktop/webapp/angularprojectBE",
+    "project.structure.last.edited": "Project",
     "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.0",
+    "project.structure.side.proportion": "0.18390805",
     "settings.editor.selected.configurable": "preferences.pluginManager"
   },
   "keyToStringList": {
@@ -84,12 +86,17 @@
   }
 }]]></component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\andrea.italiano\Desktop\webapp\angularprojectBE" />
+      <recent name="C:\Users\andrea.italiano\Desktop\webapp\angularFE" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\andrea.italiano\Desktop\webapp" />
       <recent name="C:\Users\andrea.italiano\Desktop\Angular_Project\angularFE\src\app\components" />
       <recent name="C:\Users\andrea.italiano\Desktop\Angular_Project\angularFE\src\app\models" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Docker.docker-compose.yaml: Compose Deployment">
     <configuration name="AngularprojectApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="it.softwaredoctor.angularproject.AngularprojectApplication" />
       <module name="angularprojectBE" />
@@ -103,8 +110,35 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration default="true" type="docker-deploy" factoryName="docker-compose.yml" temporary="true">
+      <deployment type="docker-compose.yml" />
+      <method v="2" />
+    </configuration>
+    <configuration name="docker-compose.yaml: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
+      <deployment type="docker-compose.yml">
+        <settings>
+          <option name="sourceFilePath" value="docker-compose.yaml" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <configuration name="docker-compose.yaml.webapp-be: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
+      <deployment type="docker-compose.yml">
+        <settings>
+          <option name="services">
+            <list>
+              <option value="webapp-be" />
+            </list>
+          </option>
+          <option name="sourceFilePath" value="docker-compose.yaml" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Docker.docker-compose.yaml: Compose Deployment" />
+        <item itemvalue="Docker.docker-compose.yaml.webapp-be: Compose Deployment" />
         <item itemvalue="Application.AngularprojectApplication" />
       </list>
     </recent_temporary>

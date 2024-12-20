@@ -1,0 +1,60 @@
+services:
+  db:
+    container_name: webAppDB
+    image: postgres:latest
+    environment:
+      POSTGRES_USER: andrea
+      POSTGRES_PASSWORD: italiano
+      PGDATA: /var/lib/postgresql/data/webApp
+      POSTGRES_DB: webApp
+    volumes:
+      - db:/var/lib/postgresql/data
+    ports:
+      - "5433:5432"
+    restart: unless-stopped
+    networks:
+      - webapp-network
+
+  webapp-be:
+    build:
+      context: ./angularprojectBE
+      dockerfile: Dockerfile
+    container_name: webapp-be
+    environment:
+      SPRING_PROFILES_ACTIVE: main
+      SPRING_DATASOURCE_URL: jdbc:postgresql://db:5432/webApp
+      SPRING_DATASOURCE_USERNAME: andrea
+      SPRING_DATASOURCE_PASSWORD: italiano
+    ports:
+      - "8080:8080"
+    restart: always
+    healthcheck:
+      test: [ "CMD-SHELL", "pg_isready -U andrea -d webapp"]
+      interval: 30s
+      timeout: 10s
+      retries: 5
+    depends_on:
+      - db
+    networks:
+      - webapp-network
+
+  webapp-fe:
+    build:
+      context: ./angularFE
+      dockerfile: Dockerfile
+    container_name: webapp-fe
+    ports:
+      - "4200:80"
+    depends_on:
+      - webapp-be
+    networks:
+      - webapp-network
+
+
+networks:
+  webapp-network:
+    driver: bridge
+
+volumes:
+  db:
+    name: webapp_db
